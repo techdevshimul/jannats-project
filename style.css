@@ -1,0 +1,537 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 60px 30px;
+  margin: 0 auto;
+}
+
+.container-second {
+  padding: 0 150px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------- Header ------------------ */
+header {
+  background-color: #040b13;
+  padding: 10px 0;
+}
+
+nav,
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li > a {
+  color: white;
+}
+
+nav > h2 {
+  color: white;
+  font-size: 20px;
+}
+
+nav > ul > li:first-child > a {
+  color: #007bff;
+}
+
+nav > ul > li:last-child > a {
+  padding: 10px 15px;
+  background-color: #007bff;
+  border-radius: 8px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav.container {
+  padding: 10px 30px;
+}
+
+nav > a {
+  border: 1px solid white;
+  padding: 10px 15px;
+}
+
+/* ------------- Hero ----------------- */
+.hero-section {
+  background: #040b13 url("./assets/images/hero-image.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 450px;
+}
+
+.hero {
+  color: white;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  height: 450px;
+}
+
+.hero > div > p.title {
+  color: #007bff !important;
+}
+
+.hero > div > h1 {
+  font-size: 56px;
+}
+
+.hero > div > h1:last-child {
+  position: relative;
+  left: 30px;
+}
+
+/* ---------- Banner ------------- */
+
+.banner-section {
+  background-color: #007bff;
+}
+
+.banner.container {
+  padding: 10px !important;
+}
+
+.banner > div > h2 {
+  font-size: 18px;
+  text-wrap: nowrap;
+  color: white;
+}
+
+.banner > div {
+  overflow: hidden;
+}
+
+/* --------------- Solutions ------------- */
+.solutions > .container-second {
+  display: flex;
+  gap: 60px;
+}
+
+.solutions > .container-second > div {
+  width: 50%;
+}
+
+.solutions > .container-second > div > img {
+  width: 100%;
+}
+
+.solutions > .container-second > div:last-child > .cards > .card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solutions
+  > .container-second
+  > div:last-child
+  > .cards
+  > .card
+  > div
+  > h3:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.solutions > .container-second > div:first-child > button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  margin: 20px 0 60px 0;
+}
+
+.solutions > .container-second > div:last-child > .cards > .card > hr {
+  margin: 30px 0;
+}
+
+.solutions > .container-second > div:last-child p {
+  color: rgb(83, 83, 83);
+}
+
+/* ----------------- Working Card ------------- */
+
+.working-process {
+  background-color: #e6f2ff;
+}
+
+.working-cards {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.working-card > p.steps {
+  color: #007bff;
+}
+
+.working-card > p {
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+}
+
+.container-second > h2 {
+  text-align: center;
+  font-size: 28px;
+
+  margin-bottom: 40px;
+}
+
+.working-card > svg {
+  background-color: #007bff;
+  padding: 10px;
+  color: white;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
+.working-card > h4 {
+  margin-top: 10px;
+}
+
+/* ------------- Projects --------------- */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  max-width: 300px;
+}
+
+.project-card > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card > a {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.project-card > h3 {
+  margin: 10px 0;
+}
+
+.projects-heading {
+  text-align: center;
+}
+
+.projects-heading > h2 {
+  font-size: 28px;
+}
+
+.projects-section p {
+  color: rgb(83, 83, 83);
+}
+
+.projects-heading > p {
+  margin: 20px 0 60px 0;
+}
+
+/* ------------- Testimonials ----------- */
+.testimonials {
+  background-color: #e6f2ff;
+}
+
+.testimonials > .container > .container-second > p {
+  color: #007bff;
+}
+
+.testimonials > .container > .container-second > h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.testimonials-card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.testimonials-card > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonials-card > div:first-child > img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.testimonials-card > div:last-child > p {
+  color: rgb(83, 83, 83);
+}
+
+.testimonials-card svg {
+  color: #007bff;
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+/* --------------- Insights ------------ */
+.insight-cards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.insight-card {
+  max-width: 350px;
+}
+
+.insight-card > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.insight-card > p {
+  color: #007bff;
+  font-size: 10px;
+}
+
+/* -------------- Footer --------- */
+footer {
+  background-color: #040b13;
+  color: white !important;
+  text-align: start;
+}
+
+footer a {
+  color: white;
+}
+
+footer h2 {
+  text-align: start !important;
+  font-size: 36px !important;
+  margin: 20px 0 !important;
+}
+
+footer .container-second > a {
+  color: #007bff;
+  text-decoration: underline;
+  margin-bottom: 20px !important;
+  display: inline-block;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.all > div > .links {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.all > div:first-child {
+  display: flex;
+  gap: 30px;
+}
+
+hr {
+  margin: 40px 0 10px 0;
+  border: 1px solid rgb(44, 44, 44);
+}
+
+footer .container {
+  padding: 60px 30px 10px 30px;
+}
+
+.copyright,
+.copyright a {
+  color: rgb(156, 156, 156);
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright a {
+  margin-right: 10px;
+}
+
+.newsletter input {
+  border-radius: 8px;
+  background-color: transparent;
+
+  border: none;
+}
+
+.newsletter {
+  display: flex;
+  gap: 0;
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.newsletter > button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* ----------------- Responsiveness ------------- */
+@media (max-width: 992px) {
+  .container-second {
+    padding: 0 50px;
+  }
+
+  .project-card {
+    width: 280px;
+  }
+
+  .container.hero {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-second {
+    padding: 0;
+  }
+
+  .container {
+    padding: 60px 10px;
+  }
+
+  .container.hero {
+    padding: 0 10px;
+  }
+  .container.hero > div:first-child > h1 {
+    font-size: 36px;
+  }
+
+  .working-cards {
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 250px;
+  }
+
+  .copyright > p,
+  .copyright > div > a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .hero > div > h1 {
+    font-size: 36px !important;
+  }
+
+  .second {
+    left: 0 !important;
+  }
+  .hero {
+    text-align: center;
+  }
+
+  .hero > div > p.title {
+    color: rgb(255, 255, 255) !important;
+  }
+
+  .solutions > .container-second {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .solutions > .container-second > div {
+    width: 100%;
+  }
+
+  .working-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .testimonials-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .insight-cards {
+    flex-wrap: wrap;
+  }
+
+  footer .all {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .all > div:last-child > p {
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 14px !important;
+  }
+
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+  }
+}
